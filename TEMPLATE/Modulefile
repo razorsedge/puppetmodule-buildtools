@@ -1,0 +1,14 @@
+name    'razorsedge-TEMPLATE'
+version '0.0.1'
+
+author 'razorsedge'
+license 'Apache License, Version 2.0'
+project_page 'https://github.com/razorsedge/puppet-TEMPLATE'
+source 'git://github.com/razorsedge/puppet-TEMPLATE.git'
+summary 'UNKNOWN'
+description 'UNKNOWN'
+#dependency 'puppetlabs/stdlib', '>=2.2.0'
+
+# Generate the changelog file
+system("git-log-to-changelog > CHANGELOG")
+$? == 0 or fail "changelog generation #{$?}!"
