@@ -10,6 +10,7 @@ sed -i "s|^version .*|version '${TAG}'|" Modulefile
 git add Modulefile
 git commit -m "Update versions for $TAG release."
 git flow release finish -m "Puppet Forge $TAG release." $TAG && \
+git-log-to-changelog | tail -n+5 >CHANGELOG &&
 puppet module build $(basename `pwd`)
 rm -f CHANGELOG
 
