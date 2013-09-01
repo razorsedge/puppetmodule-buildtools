@@ -5,7 +5,7 @@ if [ -z $TAG ]; then
   exit 1
 fi
 
-rake spec_clean
+rake spec_clean 2>/dev/null
 git flow release start $TAG || exit 2
 sed -i "s|^version .*|version '${TAG}'|" Modulefile
 git add Modulefile
