@@ -8,7 +8,3 @@ source 'git://github.com/razorsedge/puppet-TEMPLATE.git'
 summary 'UNKNOWN'
 description 'UNKNOWN'
 #dependency 'puppetlabs/stdlib', '>=2.2.0'
-
-# Generate the changelog file
-system("git-log-to-changelog > CHANGELOG")
-$? == 0 or fail "changelog generation #{$?}!"
