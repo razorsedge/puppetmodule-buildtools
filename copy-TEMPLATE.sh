@@ -12,6 +12,7 @@ done
 
 cd ${MODULE}
 git init
+mv pre-commit .git/hooks/
 git add * .gitignore .gemfile .fixtures.yml .travis.yml
 git commit -m 'first commit'
 git tag 0.0.0
