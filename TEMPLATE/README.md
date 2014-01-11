@@ -55,7 +55,7 @@ Please see LICENSE file.
 Copyright
 ---------
 
-Copyright (C) 2013 Mike Arnold <mike@razorsedge.org>
+Copyright (C) 2014 Mike Arnold <mike@razorsedge.org>
 
 [razorsedge/puppet-TEMPLATE on GitHub](https://github.com/razorsedge/puppet-TEMPLATE)
 

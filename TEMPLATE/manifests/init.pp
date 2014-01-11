@@ -33,7 +33,7 @@
 #
 # === Copyright:
 #
-# Copyright (C) 2013 Mike Arnold, unless otherwise noted.
+# Copyright (C) 2014 Mike Arnold, unless otherwise noted.
 #
 class TEMPLATE {
 
