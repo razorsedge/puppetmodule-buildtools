@@ -5,23 +5,20 @@ if [ -z $TAG ]; then
   exit 1
 fi
 
+if [ -f Modulefile ]; then
+  echo "ERROR: Remove the Modulefile and convert to metadata.json."
+  exit 3
+fi
 rake spec_clean 2>/dev/null
 git flow release start $TAG || exit 2
-sed -i "s|^version .*|version '${TAG}'|" Modulefile
-git add Modulefile
-if [ -f .metadata.json ]; then
-  cp -p .metadata.json metadata.json
-fi
-#if [ -f metadata.json ]; then
-#  sed -i "/\"version\":/s|: \".*|: \"${TAG}\",|" metadata.json
-#  git add metadata.json
-#fi
+sed -i "/\"version\":/s|: \".*|: \"${TAG}\",|" metadata.json
+git add metadata.json
 git commit -m "Update versions for $TAG release."
 git flow release finish -m "Puppet Forge $TAG release." $TAG && \
 git checkout master && \
 git-log-to-changelog | tail -n+5 >CHANGELOG &&
-puppet module build && \
-rm -f CHANGELOG metadata.json
+puppet module build . && \
+rm -f CHANGELOG
 git checkout develop
 
 echo "** Upload via browser to the Forge"
