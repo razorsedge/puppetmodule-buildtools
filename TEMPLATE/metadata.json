@@ -3,10 +3,11 @@
   "version": "0.0.1",
   "author": "razorsedge",
   "summary": "UNKNOWN",
-  "description": "UNKNOWN",
   "license": "Apache License, Version 2.0",
-  "project_page": "https://github.com/razorsedge/puppet-TEMPLATE",
   "source": "https://github.com/razorsedge/puppet-TEMPLATE.git",
+  "project_page": "https://github.com/razorsedge/puppet-TEMPLATE",
+  "issues_url": "https://github.com/razorsedge/puppet-TEMPLATE/issues",
+  "tags": [],
   "dependencies": [
     {
       "name": "puppetlabs/stdlib",
