@@ -4,7 +4,10 @@ if [ -z $TAG ]; then
   echo "ERROR: Must supply tag."
   exit 1
 fi
-
+if [ ! -x ~/bin/git-log-to-changelog ]; then
+  echo "ERROR: Require ~/bin/git-log-to-changelog."
+  exit 4
+fi
 if [ -f Modulefile ]; then
   echo "ERROR: Remove the Modulefile and convert to metadata.json."
   exit 3
