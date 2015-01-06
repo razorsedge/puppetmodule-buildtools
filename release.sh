@@ -13,6 +13,8 @@ if [ -f Modulefile ]; then
   exit 3
 fi
 rake spec_clean 2>/dev/null
+bundle exec rake spec_clean 2>/dev/null
+mv Gemfile.lock .Gemfile.lock
 git flow release start $TAG || exit 2
 sed -i "/\"version\":/s|: \".*|: \"${TAG}\",|" metadata.json
 git add metadata.json
@@ -23,6 +25,7 @@ git-log-to-changelog | tail -n+5 >CHANGELOG &&
 puppet module build . && \
 rm -f CHANGELOG
 git checkout develop
+mv .Gemfile.lock Gemfile.lock
 
 echo "** Upload via browser to the Forge"
 echo git push origin develop
