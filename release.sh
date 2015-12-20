@@ -1,4 +1,5 @@
 #!/bin/bash
+PATH=/opt/puppet/bin:$PATH
 TAG=$1
 if [ -z $TAG ]; then
   echo "ERROR: Must supply tag."
