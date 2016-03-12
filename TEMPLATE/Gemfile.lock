@@ -4,22 +4,21 @@ GEM
     CFPropertyList (2.2.8)
     diff-lcs (1.2.5)
     docile (1.1.5)
-    facter (2.4.0)
+    facter (2.4.6)
       CFPropertyList (~> 2.2.6)
-    hiera (1.3.4)
+    hiera (3.0.6)
       json_pure
-    json (1.8.2)
-    json_pure (1.8.2)
+    json (1.8.3)
+    json_pure (1.8.3)
     metaclass (0.0.4)
-    metadata-json-lint (0.0.6)
+    metadata-json-lint (0.0.11)
       json
       spdx-licenses (~> 1.0)
     mocha (1.1.0)
       metaclass (~> 0.0.1)
-    multi_json (1.10.1)
-    puppet (3.7.4)
-      facter (> 1.6, < 3)
-      hiera (~> 1.0)
+    puppet (4.3.2)
+      facter (> 2.0, < 4)
+      hiera (>= 2.0, < 4)
       json_pure
     puppet-lint (1.1.0)
     puppet-lint-empty_string-check (0.2.1)
@@ -30,17 +29,16 @@ GEM
       puppet-lint (~> 1.0)
     puppet-lint-variable_contains_upcase (1.0.0)
       puppet-lint (~> 1.0)
-    puppet-syntax (1.4.1)
+    puppet-syntax (2.1.0)
       rake
     puppet_facts (0.2.1)
-    puppetlabs_spec_helper (0.8.2)
+    puppetlabs_spec_helper (1.1.1)
       mocha
       puppet-lint
       puppet-syntax
       rake
-      rspec
       rspec-puppet
-    rake (10.4.2)
+    rake (10.5.0)
     rspec (2.99.0)
       rspec-core (~> 2.99.0)
       rspec-expectations (~> 2.99.0)
@@ -48,14 +46,14 @@ GEM
     rspec-core (2.99.2)
     rspec-expectations (2.99.2)
       diff-lcs (>= 1.1.3, < 2.0)
-    rspec-mocks (2.99.3)
-    rspec-puppet (2.0.0)
-      rspec (~> 2.0)
-    simplecov (0.9.1)
+    rspec-mocks (2.99.4)
+    rspec-puppet (2.3.2)
+      rspec
+    simplecov (0.11.2)
       docile (~> 1.1.0)
-      multi_json (~> 1.0)
-      simplecov-html (~> 0.8.0)
-    simplecov-html (0.8.0)
+      json (~> 1.8)
+      simplecov-html (~> 0.10.0)
+    simplecov-html (0.10.0)
     spdx-licenses (1.0.0)
       json
 
@@ -74,7 +72,7 @@ DEPENDENCIES
   puppet-lint-variable_contains_upcase
   puppet_facts
   puppetlabs_spec_helper
-  rake
+  rake (< 11.0)
   rspec (~> 2.0)
-  rspec-puppet (~> 2.0)
+  rspec-puppet (>= 2.1.0)
   simplecov
