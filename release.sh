@@ -1,4 +1,8 @@
 #!/bin/bash
+if ! ruby --version | grep -q "ruby 1.9"; then
+  echo "ERROR: You must use a Ruby version >1.9."
+  exit 1
+fi
 PATH=/opt/puppet/bin:$PATH
 TAG=$1
 if [ -z $TAG ]; then
