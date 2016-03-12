@@ -12,11 +12,11 @@
     * [Beginning with this module](#beginning-with-this module)
 4. [Usage - Configuration options and additional functionality](#usage)
 5. [Reference - An under-the-hood peek at what the module is doing and how](#reference)
-5. [Limitations - OS compatibility, etc.](#limitations)
+6. [Limitations - OS compatibility, etc.](#limitations)
     * [OS Support](#os-support)
     * [Notes](#notes)
     * [Issues](#issues)
-6. [Development - Guide for contributing to the module](#development)
+7. [Development - Guide for contributing to the module](#development)
 
 ##Overview
 
@@ -52,7 +52,25 @@ Put the classes, types, and resources for customizing, configuring, and doing th
 
 ##Reference
 
-Here, list the classes, types, providers, facts, etc contained in your module. This section should include all of the under-the-hood workings of your module so people know what the module is touching on their system but don't need to mess with things. (We are working on automating this section!)
+###Classes
+
+* [`TEMPLATE`](#class-TEMPLATE): Does foo
+
+###Defines
+
+* [`TEMPLATE`](#define-TEMPLATE): Does foo
+
+###Class: `TEMPLATE`
+
+####Parameters
+
+#####`foo`
+
+###Define: `TEMPLATE`
+
+####Parameters
+
+#####`foo`
 
 ##Limitations
 
