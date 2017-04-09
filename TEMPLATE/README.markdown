@@ -1,8 +1,8 @@
-#TEMPLATE
+# TEMPLATE
 
 [![Build Status](https://secure.travis-ci.org/razorsedge/puppet-TEMPLATE.png?branch=master)](http://travis-ci.org/razorsedge/puppet-TEMPLATE)
 
-####Table of Contents
+#### Table of Contents
 
 1. [Overview](#overview)
 2. [Module Description - What the module does and why it is useful](#module-description)
@@ -18,77 +18,77 @@
     * [Issues](#issues)
 7. [Development - Guide for contributing to the module](#development)
 
-##Overview
+## Overview
 
 A one-maybe-two sentence summary of what the module does/what problem it solves. This is your 30 second elevator pitch for your module. Consider including OS/Puppet version it works with.
 
-##Module Description
+## Module Description
 
 If applicable, this section should have a brief description of the technology the module integrates with and what that integration enables. This section should answer the questions: "What does this module *do*?" and "Why would I use it?"
 
 If your module has a range of functionality (installation, configuration, management, etc.) this is the time to mention it.
 
-##Setup
+## Setup
 
-###What this module affects
+### What this module affects
 
 * A list of files, packages, services, or operations that the module will alter, impact, or execute on the system it's installed on.
 * This is a great place to stick any warnings.
 * Can be in list or paragraph form.
 
-###Requirements
+### Requirements
 
 If your module requires anything extra before setting up (pluginsync enabled, etc.), mention it here.
 
-###Beginning with this module
+### Beginning with this module
 
 The very basic steps needed for a user to get the module up and running.
 
 If your most recent release breaks compatibility or requires particular steps for upgrading, you may wish to include an additional section here: Upgrading (For an example, see http://forge.puppetlabs.com/puppetlabs/firewall).
 
-##Usage
+## Usage
 
 Put the classes, types, and resources for customizing, configuring, and doing the fancy stuff with your module here. 
 
-##Reference
+## Reference
 
-###Classes
+### Classes
 
 * [`TEMPLATE`](#class-TEMPLATE): Does foo
 
-###Defines
+### Defines
 
 * [`TEMPLATE`](#define-TEMPLATE): Does foo
 
-###Class: `TEMPLATE`
+### Class: `TEMPLATE`
 
-####Parameters
+#### Parameters
 
-#####`foo`
+##### `foo`
 
-###Define: `TEMPLATE`
+### Define: `TEMPLATE`
 
-####Parameters
+#### Parameters
 
-#####`foo`
+##### `foo`
 
-##Limitations
+## Limitations
 
-###OS Support:
+### OS Support:
 
 moduletitle is available with these operating systems:
 
 * blah
 
-###Notes:
+### Notes:
 
 * blah
 
-###Issues:
+### Issues:
 
 * None
 
-##Development
+## Development
 
 Please see [DEVELOP.md](DEVELOP.md) for information on how to contribute.
 
