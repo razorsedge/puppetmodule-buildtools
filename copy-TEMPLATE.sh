@@ -6,7 +6,7 @@ if [ -z $MODULE ]; then
 fi
 
 rsync -a TEMPLATE/ ${MODULE}/
-for FILE in metadata.json README.markdown DEVELOP.md .fixtures.yml tests/*.pp manifests/*.pp .project; do
+for FILE in metadata.json README.markdown CONTRIBUTING.md .fixtures.yml tests/*.pp manifests/*.pp .project; do
   sed -i -e "s|TEMPLATE|${MODULE}|g" ${MODULE}/${FILE}
 done
 
